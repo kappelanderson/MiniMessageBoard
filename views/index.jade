@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Page #{title}
+  br
+  each val in messages 
+    div
+      p= val.text 
+      p= val.user
+      p= val.added
+      br
+  a(href="new") Adicione uma mensagem
